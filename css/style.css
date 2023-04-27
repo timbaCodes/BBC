@@ -1,0 +1,126 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+header nav >* {
+     float: left;
+}
+header div {
+     width: 20%;
+     position: relative;
+}
+header div img{
+     margin-top: 16px;
+}
+header div span{
+     position: absolute;
+     top: 23px;
+     left: 43%;
+}
+header div a{
+     position: absolute;
+     top: 23px;
+     left: 50%;
+     text-decoration: none;
+}
+header ul {
+     width: 60%;
+}
+header form{
+     width: 20%;     
+     margin-top: 20px;
+}
+header nav ul li {
+     float: left;
+     padding: 1%;
+     padding: 1% 2%;
+}
+header nav ul li a{
+     text-decoration: none;
+
+}
+header nav ul{
+     list-style: none;
+}
+header *{
+     color: white;
+}
+
+main section {
+     color: white;
+}
+main section section p {
+     padding-top: 24%;
+}
+main section  img{
+     /* width: 50%; */
+     max-width: 100%;
+     max-height: 100%;
+     position: absolute;
+}
+section div {
+     position: absolute;
+     top: 58%;
+     font-size: 13px;
+     width: 70%;
+     padding-left: 5%;
+}
+.bigone{
+     position: relative;
+     padding-left: 2%;
+}
+section div h1{
+     font-size: 25px;
+}
+header{
+     height: 60px;
+     background: black;
+}
+main section section{
+     background-image: url("../flag.png");
+     background-position: center;
+     height: 150px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+main >section{
+     float: left;
+     width: 50%;
+     height: 314px;
+}
+main section + section section{
+     float: left;
+     width: 48%;
+     margin: 5px ;
+}
+section >section{
+     float: left;
+     width: 33.3333%;
+     font-size: 15px;
+}
+section >section img {
+     margin-left: 5%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
